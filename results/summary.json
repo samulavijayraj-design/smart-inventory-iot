@@ -1,0 +1,83 @@
+{
+  "messages": 1440,
+  "items": {
+    "BOLT-M8": {
+      "rop": 1066,
+      "safety_stock": 166,
+      "manual_level": 2035,
+      "exact_share_pct": 86.5,
+      "within_1_pct": 100.0,
+      "mae_pieces": 0.14,
+      "max_abs_error": 1,
+      "alerts": 7
+    },
+    "BRKT-AL": {
+      "rop": 332,
+      "safety_stock": 52,
+      "manual_level": 549,
+      "exact_share_pct": 100.0,
+      "within_1_pct": 100.0,
+      "mae_pieces": 0,
+      "max_abs_error": 0,
+      "alerts": 6
+    },
+    "DISC-125": {
+      "rop": 126,
+      "safety_stock": 26,
+      "manual_level": 265,
+      "exact_share_pct": 93.5,
+      "within_1_pct": 100.0,
+      "mae_pieces": 0.06,
+      "max_abs_error": 1,
+      "alerts": 5
+    }
+  },
+  "latency_ms": {
+    "median": 0.43,
+    "p95": 0.54,
+    "max": 38.93
+  },
+  "alert_delay_h": {
+    "mean": 0.06,
+    "max": 1.0
+  },
+  "false_alerts": 0,
+  "policy_comparison": {
+    "BOLT-M8": {
+      "iot": {
+        "fill_rate_pct": 99.99,
+        "runs_with_stockout_pct": 3.3,
+        "avg_inventory": 1103
+      },
+      "manual": {
+        "fill_rate_pct": 100.0,
+        "runs_with_stockout_pct": 0.0,
+        "avg_inventory": 1648
+      }
+    },
+    "BRKT-AL": {
+      "iot": {
+        "fill_rate_pct": 99.95,
+        "runs_with_stockout_pct": 13.3,
+        "avg_inventory": 310
+      },
+      "manual": {
+        "fill_rate_pct": 99.75,
+        "runs_with_stockout_pct": 13.3,
+        "avg_inventory": 405
+      }
+    },
+    "DISC-125": {
+      "iot": {
+        "fill_rate_pct": 99.93,
+        "runs_with_stockout_pct": 20.0,
+        "avg_inventory": 176
+      },
+      "manual": {
+        "fill_rate_pct": 99.94,
+        "runs_with_stockout_pct": 6.7,
+        "avg_inventory": 252
+      }
+    }
+  }
+}

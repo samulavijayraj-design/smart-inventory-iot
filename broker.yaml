@@ -1,0 +1,14 @@
+---
+# Local MQTT broker for the simulation (NFR5):
+# TLS-encrypted listener on localhost, no anonymous access,
+# users from an Argon2-hashed password file (created by setup_security.py)
+listeners:
+  default:
+    type: tcp
+    bind: 127.0.0.1:18883
+    ssl: true
+    certfile: certs/server.crt
+    keyfile: certs/server.key
+plugins:
+  amqtt.plugins.authentication.FileAuthPlugin:
+    password_file: certs/passwd
